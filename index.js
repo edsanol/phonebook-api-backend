@@ -38,6 +38,7 @@ app.use(morgan((tokens, req, res) => {
 }))
 
 app.use(cors())
+app.use(express.static('build'))
 
 // Entrega la información del contenido
 app.get('/info', (request, response) => {
